@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <!-- Ionicons -->
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+
+    <style>
+      .main-sidebar {
+        background-color: #242d59 !important;
+      }
+    </style>
+  </head>
+  <body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+      <!-- Preloader -->
+      <div
+        class="preloader flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="animation__wobble"
+          src="images/favicon.png"
+          alt="AdminLTELogo"
+          height="60"
+          width="60"
+        />
+      </div>
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-widget="pushmenu"
+              href="index.html"
+              role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="starter.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <!-- Navbar Search -->
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-widget="navbar-search"
+              href="#"
+              role="button"
+            >
+              <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+              <form class="form-inline">
+                <div class="input-group input-group-sm">
+                  <input
+                    class="form-control form-control-navbar"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <button
+                      class="btn btn-navbar"
+                      type="button"
+                      data-widget="navbar-search"
+                    >
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+
+          <!-- Messages Dropdown Menu -->
+
+          <!-- Notifications Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-bell"></i>
+              <span class="badge badge-warning navbar-badge">15</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <span class="dropdown-header">15 Notifications</span>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                <span class="float-right text-muted text-sm">3 mins</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-file mr-2"></i> 3 new reports
+                <span class="float-right text-muted text-sm">2 days</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer"
+                >See All Notifications</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-warning elevation-4">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-link">
+          <img
+            src="images/favicon.png"
+            alt="AdminLTE Logo"
+            class="brand-image img-circle elevation-3"
+            style="opacity: 1"
+          />
+          <span class="brand-text font-weight-light">Korsob </span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img
+                src="images/Profile.jpeg"
+                class="img-circle elevation-2"
+                alt="User Image"
+              />
+            </div>
+            <div class="info">
+              <a href="#" class="d-block">Phumin Chumphu</a>
+            </div>
+          </div>
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+              <li class="nav-item">
+                <a href="starter.html" class="nav-link">
+                  <i class="fas fa-bell nav-icon"></i>
+                  <p>
+                    Activities
+                    <span class="badge badge-info right">5</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="exam-courses.html" class="nav-link">
+                  <i class="fas fa-stream nav-icon"></i>
+                  <p>
+                    Exam Courses
+                    <span class="right badge badge-danger">New</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="exam-result.html" class="nav-link active">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Exam Result</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="calendar.html" class="nav-link">
+                  <i class="nav-icon far fa-calendar-alt"></i>
+                  <p>
+                    Calendar
+                    <span class="badge badge-info right">2</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">
+                  <i class="fas fa-sign-out-alt nav-icon"></i>
+                  <p>Sign Out</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1 class="m-0">Exam Result</h1>
+              </div>
+              <!-- /.col -->
+
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-info">
+                  <div class="inner">
+                    <p>SEMESTER</p>
+                    <h3>2021/2</h3>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-university"></i>
+                  </div>
+                  <a href="#" class="small-box-footer"
+                    >More info <i class="fas fa-arrow-circle-right"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-success">
+                  <div class="inner">
+                    <p>GPA</p>
+                    <h3>3.85</h3>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                  </div>
+                  <a href="#" class="small-box-footer"
+                    >More info <i class="fas fa-arrow-circle-right"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-warning">
+                  <div class="inner">
+                    <p>GPAX</p>
+                    <h3>3.75</h3>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-ios-copy"></i>
+                  </div>
+                  <a href="#" class="small-box-footer"
+                    >More info <i class="fas fa-arrow-circle-right"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-danger">
+                  <div class="inner">
+                    <p>RESULT OF THIS SEMEMSTER</p>
+                    <h3>-</h3>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-pie-graph"></i>
+                  </div>
+                  <a href="#" class="small-box-footer"
+                    >More info <i class="fas fa-arrow-circle-right"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- ./col -->
+            </div>
+            <div class="row">
+              <!-- /.col-md-9 -->
+              <div class="col-md-12">
+                <div class="card card-warning">
+                  <div class="card-header border-0">
+                    <h3 class="card-title">Exam Average Time</h3>
+                  </div>
+                  <div class="chart">
+                    <div class="chartjs-size-monitor">
+                      <div class="chartjs-size-monitor-expand">
+                        <div class=""></div>
+                      </div>
+                      <div class="chartjs-size-monitor-shrink">
+                        <div class=""></div>
+                      </div>
+                    </div>
+                    <canvas
+                      id="myChart"
+                      style="
+                        min-height: 250px;
+                        height: 250px;
+                        max-height: 250px;
+                        max-width: 100%;
+                        display: block;
+                        width: 350px;
+                        margin: 20px;
+                      "
+                      width="397"
+                      height="250"
+                      class="chartjs-render-monitor"
+                    ></canvas>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.col-md-9 -->
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card card-warning">
+                  <div class="card-header">
+                    <h3 class="card-title">Replaying Average Time</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart">
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <canvas
+                        id="myChart2"
+                        style="
+                          min-height: 250px;
+                          height: 250px;
+                          max-height: 250px;
+                          max-width: 100%;
+                          display: block;
+                          width: 397px;
+                        "
+                        width="397"
+                        height="300"
+                        class="chartjs-render-monitor"
+                      ></canvas>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card card-warning">
+                  <div class="card-header">
+                    <h3 class="card-title">Summarize Test Performance</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart">
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <canvas
+                        id="myChart3"
+                        style="
+                          min-height: 250px;
+                          height: 250px;
+                          max-height: 250px;
+                          max-width: 100%;
+                          width: 397px;
+                        "
+                        width="200"
+                        height="200"
+                        class="chartjs-render-monitor"
+                      ></canvas>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card card-warning">
+                  <div class="card-header">
+                    <h3 class="card-title">Exam Score Average</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart">
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <canvas
+                        id="myChart4"
+                        style="
+                          min-height: 250px;
+                          height: 250px;
+                          max-height: 250px;
+                          max-width: 100%;
+                          display: block;
+                          width: 397px;
+                        "
+                        width="397"
+                        height="300"
+                        class="chartjs-render-monitor"
+                      ></canvas>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2021 <a href="index.html">Korsob</a>.</strong>
+        All rights reserved.
+      </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- ChartJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"></script>
+    <!-- Page specific script -->
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["Exam 1", "Exam 2", "Exam 3", "Exam 4", "Exam 5", "Exam 6"],
+          datasets: [
+            {
+              label: "Exam Average Time",
+              data: [13, 10, 5, 8, 4, 9],
+              backgroundColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              tension: 0.2,
+            },
+            {
+              label: "Time",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              tension: 0.2,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      var ctx = document.getElementById("myChart2");
+      var myChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Exam 1", "Exam 2", "Exam 3", "Exam 4", "Exam 5", "Exam 6"],
+          datasets: [
+            {
+              label: "Time",
+              data: [13, 10, 5, 8, 4, 9],
+              backgroundColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              tension: 2,
+            },
+            {
+              borderWidth: 1,
+              label: "Average Time",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.3)",
+                "rgba(54, 162, 235, 0.3)",
+                "rgba(255, 206, 86, 0.3)",
+                "rgba(75, 192, 192, 0.3)",
+                "rgba(153, 102, 255, 0.3)",
+                "rgba(255, 159, 64, 0.3)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 0.3)",
+                "rgba(54, 162, 235, 0.3)",
+                "rgba(255, 206, 86, 0.3)",
+                "rgba(75, 192, 192, 0.3)",
+                "rgba(153, 102, 255, 0.3)",
+                "rgba(255, 159, 64, 0.3)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      var ctx = document.getElementById("myChart3");
+      var myChart = new Chart(ctx, {
+        type: "radar",
+        data: {
+          labels: ["Power", "Thinking", "Design", "Reason", "Speed", "Speech"],
+          datasets: [
+            {
+              label: "Your Performance",
+              data: [2, 3, 4, 5, 6, 7],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.5)",
+                "rgba(54, 162, 235, 0.5)",
+                "rgba(255, 206, 86, 0.5)",
+                "rgba(75, 192, 192, 0.5)",
+                "rgba(153, 102, 255, 0.5)",
+                "rgba(255, 159, 64, 0.5)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 0.5)",
+                "rgba(54, 162, 235, 0.5)",
+                "rgba(255, 206, 86, 0.5)",
+                "rgba(75, 192, 192, 0.5)",
+                "rgba(153, 102, 255, 0.5)",
+                "rgba(255, 159, 64, 0.5)",
+              ],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            title: {},
+          },
+        },
+      });
+      var ctx = document.getElementById("myChart4");
+      var myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["Power", "Thinking", "Design", "Reason", "Speed", "Speech"],
+          datasets: [
+            {
+              label: "Score",
+              data: [16, 18, 15, 13, 19, 20],
+              backgroundColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              tension: 0.2,
+            },
+            {
+              label: "Average Score",
+              data: [16, 17, 16, 15, 16, 17],
+              backgroundColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              tension: 0.2,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            title: {},
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
